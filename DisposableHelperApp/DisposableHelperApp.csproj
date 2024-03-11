@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Bokehlicia-Captiva-Plank.ico</ApplicationIcon>
+    <PackageId>Helper.Performance.DisposableHelper</PackageId>
+    <Title>Helper.Performance.DisposableHelper</Title>
+    <Version>1.0.0</Version>
+    <Authors>Özgür ATILGAN</Authors>
+    <Company>Özgür ATILGAN</Company>
+    <Product>Performance Helper Library for Disposing</Product>
+    <Description>This library auto disposing object for performance</Description>
+    <Copyright>Copyright 2023</Copyright>
+    <PackageIcon>Bokehlicia-Captiva-Plank.128 (1).png</PackageIcon>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Helper, Performance, Disposable</PackageTags>
+    <PackageReleaseNotes>This library auto disposing object for performance</PackageReleaseNotes>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Bokehlicia-Captiva-Plank.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\Bokehlicia-Captiva-Plank.128 (1).png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
