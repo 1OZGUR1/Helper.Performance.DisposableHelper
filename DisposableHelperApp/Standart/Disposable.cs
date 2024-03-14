@@ -6,4 +6,3 @@ public static class Disposable
         where T : IDisposable =>
         new DisposableOfStandart<T>(factory);
 }
-
