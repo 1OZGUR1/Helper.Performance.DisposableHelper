@@ -3,8 +3,12 @@
 public class DisposableOfStandardAsync<T>
     where T : IAsyncDisposable
 {
+    internal DisposableOfStandardAsync(Func<T> factory)
+    {
+        Factory = factory;
+    }
+
     private Func<T> Factory { get; }
-    internal DisposableOfStandardAsync(Func<T> factory) => Factory = factory;
 
     public async Task UseAsync(Action<T> action)
     {

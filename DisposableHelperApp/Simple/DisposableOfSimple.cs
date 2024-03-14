@@ -2,8 +2,7 @@
 
 public class DisposableHelperSimple<T> : IDisposable
 {
-    public T Value { get; }
-    private Action _cleanup;
+    private readonly Action _cleanup;
 
     public DisposableHelperSimple(T value, Action cleanup)
     {
@@ -11,5 +10,10 @@ public class DisposableHelperSimple<T> : IDisposable
         _cleanup = cleanup;
     }
 
-    public void Dispose() => _cleanup?.Invoke();
+    public T Value { get; }
+
+    public void Dispose()
+    {
+        _cleanup?.Invoke();
+    }
 }
